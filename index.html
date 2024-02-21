@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width">
+        <title>Challenge Encriptador WG</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Kode+Mono&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="encabezado">
+                <h1>WG</h1>
+            </div>
+        </header>
+        <main>
+            <div class="texto">
+                <ul class="encritador">
+                    <li class="encripta">
+                        <textarea id="textUser" class="textoUsuario" placeholder="Ingrese el texto aquí"></textarea>
+                        <p id="inf">[!] Solo letras minúsculas y sin acentos</p>
+                        <button onclick="encriptador()" class="boton">Encriptar</button>
+                        <button onclick="desenctriptador()" id="desencry" class="boton" disabled>Desencriptar</button>
+                    </li>
+                    <li class="desencripta">
+                        <img id="jpg" class="imagen" src="imagen/cifrado.jpg" alt="Encriptdort WG">
+                        <h2 id="dsencripta">Ningún mensaje fue encontrado</h2>
+                        <p id="borrar">Ingresa el texto que desees encriptar o desencriptar</p>
+                        <button onclick="copia()" id="copiaTxt" class="boton" disabled>Copiar</button>
+                    </li>
+                </ul>
+
+
+            </div>
+        </main>
+        <footer>
+            <p class="copyright">&copy Copyright William Gallardo - 2024</p>
+        </footer>
+        <script src="app.js" defer></script>
+    </body>
+</html>

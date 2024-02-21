@@ -1,0 +1,154 @@
+body{
+    font-family: "Kode Mono", monospace;
+}
+
+.encabezado{
+    padding: 3em 0;
+    background: #FFFFFF;
+}
+
+.encabezado h1{
+    margin-left: 220px;
+    text-align: left;
+    color: #0A3871;
+    font-size: 90px;
+    font-weight: bold;
+}
+
+header{
+    background: #c3c3e4;
+}
+
+.texto{
+    padding: 3em 0;
+    background: linear-gradient(white, #6d97d6);
+}
+
+.texto li{
+    display: inline-block;
+    text-align: center;
+    height: 602px;
+    vertical-align: top;
+    border: 2px solid #0A3871;
+    border-radius: 10px;
+}
+
+.encripta{
+    width: 60%;
+    background: #c3c3e4;
+}
+
+.textoUsuario{
+    background: #c3c3e4;
+    padding: 15px;
+    width: 95%;
+    height: 442px;
+    border: none;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.textoUsuario:focus-visible{
+    outline: 0px;
+}
+
+.desencripta{
+    width: 30%;
+    background: linear-gradient(white, #6ca6ec);
+}
+
+.imagen{
+    margin-top: 100px;
+    width: 65%;
+    transition: 400ms;
+    box-shadow: 5px 5px 5px 5px #000000;
+}
+
+
+
+.desencripta h2{
+    padding: 10px 10px;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+
+
+.boton:hover{
+    background: #0509fd;
+    border-color: #0A3871;
+}
+
+.boton:active{
+    border-color: white;
+    background: #6ca6ec;
+}
+
+.boton:disabled{
+    background: #F0f0f0;
+    color: rgb(155, 154, 154);
+}
+
+.boton{
+    background: #0A3871;
+    padding: 10px;
+    width: 212px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    font-style: inherit;
+    color: #F0f0f0;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 2px 2px #4b4949;
+   
+}
+
+footer{
+    background: #6d97d6;
+    text-align: center;
+    padding: 40px;
+}
+
+.copyright{
+    font-size: 17px;
+    margin: 40px;
+    color: #FFFFFF;
+    font-weight: normal;
+    animation-duration: 3s;
+    animation-name: piePagina;
+}
+
+@keyframes piePagina {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+    div{
+        position: static;
+    }
+
+
+    .encripta, .desencripta{
+        width: auto;
+    }
+    .encripta, .desencripta{
+        width: 100%;
+    }
+}
