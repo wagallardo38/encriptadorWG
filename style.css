@@ -20,7 +20,7 @@ header{
     background: #c3c3e4;
 }
 
-.texto{
+div.texto{
     padding: 3em 0;
     background: linear-gradient(white, #6d97d6);
 }
@@ -32,7 +32,7 @@ header{
     vertical-align: top;
     border: 2px solid #0A3871;
     border-radius: 10px;
-    text-justify: inter-word;
+    margin-left: 40px;
 }
 
 .encripta{
@@ -74,10 +74,11 @@ header{
     text-align: center;
     font-size: 25px;
     font-weight: bold;
-   
+ }
+
+h2#dsencripta {
+    word-wrap: break-word;
 }
-
-
 
 .boton:hover{
     background: #0509fd;
@@ -156,3 +157,5 @@ footer{
         width: 100%;
     }
 }
+
+
