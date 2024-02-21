@@ -1,5 +1,6 @@
 body{
     font-family: "Kode Mono", monospace;
+    overflow-x: hidden;
 }
 
 .encabezado{
@@ -31,6 +32,7 @@ header{
     vertical-align: top;
     border: 2px solid #0A3871;
     border-radius: 10px;
+    text-justify: inter-word;
 }
 
 .encripta{
@@ -52,6 +54,7 @@ header{
     outline: 0px;
 }
 
+
 .desencripta{
     width: 30%;
     background: linear-gradient(white, #6ca6ec);
@@ -68,9 +71,10 @@ header{
 
 .desencripta h2{
     padding: 10px 10px;
+    text-align: center;
     font-size: 25px;
     font-weight: bold;
-
+   
 }
 
 
