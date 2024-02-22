@@ -31,9 +31,7 @@ function asignarElemento(elemento, texto){
 
 function leetxt(){
     var txt = document.getElementById('textUser').value;
-    if(txt == 0){
-        document.getElementById('inf').style.display = 'list-item';
-    } else if(/[!-+]/.test(txt) || /[)-,]/.test(txt) || /[Á-Ü]/.test(txt) || /[á-ü]/.test(txt) || /[A-Z]/.test(txt) || /[0-9]/.test(txt) == true){
+    if(/[a-z]/.test(txt) != true){
         document.getElementById('inf').style.display = 'list-item';
     }else {
         document.getElementById('copiaTxt').removeAttribute('disabled');
@@ -77,7 +75,9 @@ function desenctriptador(){
 }
 
 function desencripta(mensajeE){
-    for(let i = 0; i < matrizVocal.length; i++){
+    let i = parseInt(matrizVocal.length);
+    while( i > 0){
+        i--;
         if(mensajeE.includes(matrizVocal[i][1])){
             mensajeE = mensajeE.replaceAll(
                 matrizVocal[i][1],
