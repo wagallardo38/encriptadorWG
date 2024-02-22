@@ -122,11 +122,17 @@ footer{
 
 .copyright{
     font-size: 17px;
+    margin-top: 0;
     margin: 40px;
     color: #FFFFFF;
     font-weight: normal;
     animation-duration: 3s;
     animation-name: piePagina;
+}
+
+.gato{
+    height: 30px;
+    width: 60px;
 }
 
 @keyframes piePagina {
