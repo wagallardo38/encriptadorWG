@@ -31,7 +31,7 @@ function asignarElemento(elemento, texto){
 
 function leetxt(){
     var txt = document.getElementById('textUser').value;
-    if(/[a-z]/.test(txt) != true){
+    if (/[a-z]/.test(txt) != true || /[0-9]/.test(txt) != false || /[A-Z]/.test(txt) != false || /[!-+]/.test(txt) != false || /[°|¬'¨´*~{}`.,:;_-]/.test(txt) != false ){
         document.getElementById('inf').style.display = 'list-item';
     }else {
         document.getElementById('copiaTxt').removeAttribute('disabled');
